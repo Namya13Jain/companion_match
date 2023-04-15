@@ -15,3 +15,9 @@ const TextStyle drawerText = TextStyle(
     color: Color.fromARGB(255, 35, 34, 34),
     fontSize: 17,
     fontWeight: FontWeight.w600);
+
+//for body text
+const TextStyle bodyText = TextStyle(
+    color: Color.fromARGB(255, 35, 34, 34),
+    fontSize: 17,
+    fontWeight: FontWeight.w600);

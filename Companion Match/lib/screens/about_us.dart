@@ -2,8 +2,8 @@ import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
 import 'package:unicons/unicons.dart';
 
-class EnrolCourse extends StatelessWidget {
-  const EnrolCourse({super.key});
+class AboutUs extends StatelessWidget {
+  const AboutUs({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +13,10 @@ class EnrolCourse extends StatelessWidget {
         elevation: 5,
         backgroundColor: const Color.fromRGBO(250, 100, 7, 0.8),
         title: const Text(
-          "Explore Course",
-          style: appBarText,
+          "About Us",
+          style: TextStyle(
+            fontSize: 20,
+          ),
         ),
         leading: Builder(
           builder: (BuildContext context) {
@@ -32,7 +34,6 @@ class EnrolCourse extends StatelessWidget {
           },
         ),
       ),
-      //drawer
       drawer: Drawer(
         child: ListView(
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
@@ -118,7 +119,75 @@ class EnrolCourse extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [],
+          children: const [
+            Image(
+              image: AssetImage("assets/images/logo_no_bg.png"),
+              height: 300,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, right: 12, bottom: 5),
+              child: Text(
+                "Intro",
+                style: bodyText,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, right: 12, bottom: 7, top: 2),
+              child: Text(
+                "Our Services",
+                style: headingText,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, right: 12, bottom: 5),
+              child: Text(
+                "Aging Together offers a wide range of services, including the ability to find a companion who can provide social interaction and emotional support. Whether you're looking for someone to chat with or someone to accompany you on walks, our app makes it easy to find the perfect match.",
+                style: bodyText,
+              ),
+            ),
+            Divider(
+              color: Colors.grey,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, right: 12, bottom: 7, top: 7),
+              child: Text(
+                "Our app also provides access to caretakers on a rental basis, who can step in and provide the kind of care and attention that family members would normally offer. Whether it's help with day-to-day activities like grocery shopping or assistance with medical appointments, Aging Together is there to provide support.",
+                style: bodyText,
+              ),
+            ),
+            Divider(
+              color: Colors.grey,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, right: 12, bottom: 7, top: 7),
+              child: Text(
+                "Aging Together also offers a unique mentorship program, connecting seniors with college students who can provide guidance and support as they learn new skills. College students can earn certificates of social internships, which will help them stand out when applying for jobs.",
+                style: bodyText,
+              ),
+            ),
+            Divider(
+              color: Colors.grey,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, right: 12, bottom: 7, top: 7),
+              child: Text(
+                  "Our app also gives medication reminders that allows immediate family members to record and schedule personalized voice messages. It sends a notification back to the family members when the medicine has been taken.",
+                  style: bodyText),
+            ),
+            Divider(
+              color: Colors.grey,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 12, right: 12, bottom: 7, top: 7),
+              child: Text(
+                "We also offer the option for the immediate family members to track the location of their loved ones suffering from Alzeimers disease and dementia, through just their phones.",
+                style: bodyText,
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+          ],
         ),
       ),
     );
