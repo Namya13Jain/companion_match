@@ -178,7 +178,7 @@ class LearnPage extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.all(10.0),
                         child: Text(
-                          'COOKING \n Duration: 1 months \n Coach: Amrita Oberoi',
+                          'COOKING \n Duration: 1 month \n Coach: Amrita Oberoi',
                           style: TextStyle(fontSize: 18.0),
                         ),
                       ),

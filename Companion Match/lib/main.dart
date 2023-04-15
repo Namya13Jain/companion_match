@@ -1,23 +1,29 @@
+//import 'package:employfy/screens/chat.dart';
 import 'package:employfy/screens/explore_course.dart';
 import 'package:flutter/material.dart';
 import 'package:employfy/screens/companion/start.dart';
 import 'package:employfy/screens/home.dart';
 import 'package:employfy/screens/learn.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+//import 'package:stream_chat_flutter/stream_chat_flutter.dart';
 
+/* final apiKey = "h9hrjbfs5c46";
+final userToken =
+    "xwk6jybcwn3kvx7n9ua2wcqrej65s6m86cn7nnzv7d4r2sn5tus7gpsdpmcv7ahd"; */
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+  const MyApp({
+    super.key,
+  });
 
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -48,49 +54,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-/* class Home extends StatefulWidget {
-  const Home({super.key});
-
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  int onClick = 0;
-
-  final List pageToNavigate = [
-    const HomeScreen(), //home
-    Start(), //finding companion
-    const LearnPage(), //Learn
-    //chat
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: pageToNavigate[onClick],
-        backgroundColor: Colors.white,
-        bottomNavigationBar: CurvedNavigationBar(
-          animationDuration: const Duration(milliseconds: 150),
-          backgroundColor: Colors.white,
-          color: const Color.fromRGBO(250, 100, 7, 0.8),
-          onTap: (index) {
-            setState(() {
-              onClick = index;
-              print(onClick);
-            });
-          },
-          items: const <Widget>[
-            Icon(Icons.home_filled),
-            Icon(Icons.person_2_rounded),
-            Icon(Icons.book),
-            // Icon(Icons.chat_bubble),
-          ],
-        ),
-      ),
-    );
-  }
-}
- */
