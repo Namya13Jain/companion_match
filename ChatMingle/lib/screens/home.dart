@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
           children: [
             const Image(
-              image: AssetImage("assets/images/logo.png"),
+              image: AssetImage("assets/images/logo_bg.png"),
               height: 150,
             ),
 
@@ -124,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
             //feedback form
             ListTile(
                 leading: const Icon(
-                  UniconsLine.schedule,
+                  UniconsLine.feedback,
                   color: Color.fromARGB(255, 58, 57, 57),
                   size: 30,
                 ),
@@ -140,14 +140,22 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       //body of the screen
       body: Column(
-        children: [
-          const Text(
+        children: const [
+          SizedBox(
+            height: 20,
+          ),
+          Text(
             "Welcome to Chat Mingle",
             style: headingText,
           ),
-          const Image(
-            image: AssetImage("assets/images/companion.png"),
-            height: 200,
+          SizedBox(
+            height: 20,
+          ),
+          Center(
+            child: Image(
+              image: AssetImage("assets/images/companion.png"),
+              height: 200,
+            ),
           ),
         ],
       ),

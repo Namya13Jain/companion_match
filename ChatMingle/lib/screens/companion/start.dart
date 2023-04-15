@@ -1,5 +1,7 @@
+import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
 import 'info1.dart';
+import 'package:unicons/unicons.dart';
 
 class Start extends StatelessWidget {
   static const String id = 'Find Companion';
@@ -15,8 +17,124 @@ class Start extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           elevation: 5,
-          backgroundColor: const Color.fromRGBO(8, 143, 143, 1),
-          title: Text("Find Companion"),
+          backgroundColor: const Color.fromRGBO(250, 100, 7, 0.8),
+          title: const Text(
+            "Find Companion",
+            style: appBarText,
+          ),
+          leading: Builder(
+            builder: (BuildContext context) {
+              return IconButton(
+                icon: const Icon(
+                  UniconsLine.paragraph,
+                  color: Colors.white,
+                  size: 24,
+                ),
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+                tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              );
+            },
+          ),
+        ),
+        //drawer
+        drawer: Drawer(
+          child: ListView(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            children: [
+              const Image(
+                image: AssetImage("assets/images/logo_bg.png"),
+                height: 150,
+              ),
+
+              //home
+              ListTile(
+                  leading: const Icon(
+                    UniconsLine.home_alt,
+                    color: Color.fromARGB(255, 58, 57, 57),
+                    size: 30,
+                  ),
+                  title: const Text(
+                    'Home',
+                    style: drawerText,
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, 'home_screen');
+                  }),
+
+              //companion
+              ListTile(
+                  leading: const Icon(
+                    UniconsLine.chat_bubble_user,
+                    color: Color.fromARGB(255, 58, 57, 57),
+                    size: 30,
+                  ),
+                  title: const Text(
+                    'Find companion',
+                    style: drawerText,
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, 'start');
+                  }),
+              // chat
+              ListTile(
+                  leading: const Icon(
+                    UniconsLine.comment_lines,
+                    color: Color.fromARGB(255, 58, 57, 57),
+                    size: 30,
+                  ),
+                  title: const Text(
+                    'Chat',
+                    style: drawerText,
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, 'chat');
+                  }),
+              //learn
+              ListTile(
+                  leading: const Icon(
+                    UniconsLine.book,
+                    color: Color.fromARGB(255, 58, 57, 57),
+                    size: 30,
+                  ),
+                  title: const Text(
+                    'Learn',
+                    style: drawerText,
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, 'learn');
+                  }),
+              //about us
+              ListTile(
+                  leading: const Icon(
+                    UniconsLine.question_circle,
+                    color: Color.fromARGB(255, 58, 57, 57),
+                    size: 30,
+                  ),
+                  title: const Text(
+                    'About Us',
+                    style: drawerText,
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, 'about_us');
+                  }),
+              //feedback form
+              ListTile(
+                  leading: const Icon(
+                    UniconsLine.feedback,
+                    color: Color.fromARGB(255, 58, 57, 57),
+                    size: 30,
+                  ),
+                  title: const Text(
+                    'Feedback Form',
+                    style: drawerText,
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, 'feed_back');
+                  }),
+            ],
+          ),
         ),
         body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 30.0),
@@ -27,13 +145,13 @@ class Start extends StatelessWidget {
                   width: 200,
                   child: Image.asset('assets/images/age.jpg')),
               SizedBox(height: 50),
-              Text("WELCOME TO AGING TOGETHER",
+              Text("Feeling lonely, find companion",
                   style: TextStyle(
                       color: Color.fromARGB(255, 35, 34, 34),
                       fontSize: 18,
                       fontWeight: FontWeight.w600)),
               Text(
-                  "Aging Together is a platform which provides you the opportunity to find a companion who can be someone you share same interest with or simply someone who can accompany you on evening walks.",
+                  "Chat Mingle is a platform which helps senior citizens to find friends with whom they can chat, meet and discuss whatever they want to. It will make them feel that someone is there who can spend time with them.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Color.fromARGB(255, 35, 34, 34),

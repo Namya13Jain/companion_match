@@ -36,11 +36,12 @@ class _MyAppState extends State<MyApp> {
         splashTransition: SplashTransition.sizeTransition,
       ),
       routes: {
-        'start': (context) => Start(),
-        'home_screen': (context) => const HomeScreen(),
-        'learn': (context) => const LearnPage(),
-        //'about_us':(context) =>
-        //'feed_back':(context) =>
+        'start': (context) => Start(), //companion
+        'home_screen': (context) => const HomeScreen(), //home screen
+        'learn': (context) => const LearnPage(), //learning page
+        //'about_us':(context) =>  //about us
+        //'feed_back':(context) => //feedback
+        //'chat':(context) => //chat
       },
     );
   }
