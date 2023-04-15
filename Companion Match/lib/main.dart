@@ -48,7 +48,6 @@ class _MyAppState extends State<MyApp> {
         'learn': (context) => const LearnPage(), //learning page
         //'about_us':(context) =>  //about us
         //'feed_back':(context) => //feedback
-        //'chat':(context) => //chat
         'explore_course': (context) => const EnrolCourse(),
       },
     );

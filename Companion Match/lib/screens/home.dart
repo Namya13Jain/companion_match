@@ -75,20 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onTap: () {
                   Navigator.pushNamed(context, 'start');
                 }),
-            // chat
-            ListTile(
-                leading: const Icon(
-                  UniconsLine.comment_lines,
-                  color: Color.fromARGB(255, 58, 57, 57),
-                  size: 30,
-                ),
-                title: const Text(
-                  'Chat',
-                  style: drawerText,
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, 'chat');
-                }),
+
             //learn
             ListTile(
                 leading: const Icon(
