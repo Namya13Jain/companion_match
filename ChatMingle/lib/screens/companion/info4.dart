@@ -1,3 +1,4 @@
+import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
 import 'info3.dart';
 
@@ -20,14 +21,14 @@ class _MoreInfo3 extends State<info4> {
         appBar: AppBar(
           centerTitle: true,
           elevation: 5,
-          backgroundColor: const Color.fromRGBO(8, 143, 143, 1),
-          title: Text("Find Companion"),
+          backgroundColor: const Color.fromRGBO(250, 100, 7, 0.8),
+          title: const Text("Find Companion", style: appBarText),
           leading: GestureDetector(
               onTap: () {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => info3()));
               },
-              child: Icon(
+              child: const Icon(
                 Icons.arrow_back_ios_new_rounded,
                 color: Colors.white,
                 size: 20,
@@ -40,40 +41,40 @@ class _MoreInfo3 extends State<info4> {
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("What personal qualities do you love?",
+                      const Text("What personal qualities do you love?",
                           style: TextStyle(
                               color: Color.fromARGB(255, 35, 34, 34),
-                              fontSize: 17,
+                              fontSize: 19,
                               fontWeight: FontWeight.w600)),
-                      SizedBox(height: 10.0),
-                      TextField(
+                      const SizedBox(height: 10.0),
+                      const TextField(
                           textAlign: TextAlign.left,
                           decoration: InputDecoration(
                               filled: true,
                               fillColor: Colors.white,
                               labelText: "Write about your qualities",
-                              contentPadding: const EdgeInsets.only(
-                                  bottom: 20.0, top: 80.0),
+                              contentPadding:
+                                  EdgeInsets.only(bottom: 20.0, top: 80.0),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(color: Colors.black),
                               ),
                               enabledBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(color: Colors.white),
                               ))),
-                      Text("What are you still hoping to accomplish?",
+                      const Text("What are you still hoping to accomplish?",
                           style: TextStyle(
                               color: Color.fromARGB(255, 35, 34, 34),
-                              fontSize: 17,
+                              fontSize: 19,
                               fontWeight: FontWeight.w600)),
-                      SizedBox(height: 10.0),
-                      TextField(
+                      const SizedBox(height: 10.0),
+                      const TextField(
                           textAlign: TextAlign.left,
                           decoration: InputDecoration(
                               filled: true,
                               fillColor: Colors.white,
                               labelText: "Write about thoughts",
-                              contentPadding: const EdgeInsets.only(
-                                  bottom: 20.0, top: 80.0),
+                              contentPadding:
+                                  EdgeInsets.only(bottom: 20.0, top: 80.0),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(color: Colors.black),
                               ),
@@ -81,23 +82,25 @@ class _MoreInfo3 extends State<info4> {
                                 borderSide: BorderSide(color: Colors.white),
                               ))),
                       Padding(
-                          padding: EdgeInsets.only(top: 20.0),
+                          padding: const EdgeInsets.only(top: 20.0),
                           child: Center(
                               child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                elevation: 0,
-                                primary: Color.fromRGBO(8, 143, 143, 1)),
+                              elevation: 10,
+                              primary: const Color.fromRGBO(250, 100, 7, 0.8),
+                            ),
                             onPressed: () {
                               Navigator.pushNamed(context, 'start');
                             },
                             child: Container(
                               width: double.infinity,
-                              child: Center(
+                              height: 50,
+                              child: const Center(
                                   child: Text(
                                 'Finish',
                                 style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               )),
                             ),

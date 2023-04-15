@@ -1,3 +1,4 @@
+import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
 import 'info4.dart';
 import 'info2.dart';
@@ -26,14 +27,17 @@ class _MoreInfo2 extends State<info3> {
         appBar: AppBar(
           centerTitle: true,
           elevation: 5,
-          backgroundColor: const Color.fromRGBO(8, 143, 143, 1),
-          title: Text("Find Companion"),
+          backgroundColor: const Color.fromRGBO(250, 100, 7, 0.8),
+          title: const Text(
+            "Find Companion",
+            style: appBarText,
+          ),
           leading: GestureDetector(
               onTap: () {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => info2()));
               },
-              child: Icon(
+              child: const Icon(
                 Icons.arrow_back_ios_new_rounded,
                 color: Colors.white,
                 size: 20,
@@ -46,11 +50,11 @@ class _MoreInfo2 extends State<info3> {
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                           "What you like doing the most? Choose from the options given below.",
                           style: TextStyle(
                               color: Color.fromARGB(255, 35, 34, 34),
-                              fontSize: 17,
+                              fontSize: 19,
                               fontWeight: FontWeight.w600)),
                       CheckboxListTile(
                         value: music,
@@ -59,12 +63,14 @@ class _MoreInfo2 extends State<info3> {
                             music = value;
                           });
                         },
-                        activeColor: Colors.blue,
-                        title: Text("Listening to Music",
-                            style: TextStyle(
-                                color: Color.fromARGB(255, 35, 34, 34),
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600)),
+                        activeColor: const Color.fromRGBO(250, 100, 7, 0.5),
+                        title: const Text(
+                          "Listening to Music",
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 35, 34, 34),
+                              fontSize: 17,
+                              fontWeight: FontWeight.w600),
+                        ),
                       ),
                       CheckboxListTile(
                         value: yoga,
@@ -73,11 +79,11 @@ class _MoreInfo2 extends State<info3> {
                             yoga = value;
                           });
                         },
-                        activeColor: Colors.blue,
-                        title: Text("Yoga",
+                        activeColor: const Color.fromRGBO(250, 100, 7, 0.5),
+                        title: const Text("Yoga",
                             style: TextStyle(
                                 color: Color.fromARGB(255, 35, 34, 34),
-                                fontSize: 15,
+                                fontSize: 17,
                                 fontWeight: FontWeight.w600)),
                       ),
                       CheckboxListTile(
@@ -87,11 +93,11 @@ class _MoreInfo2 extends State<info3> {
                             skills = value;
                           });
                         },
-                        activeColor: Colors.blue,
-                        title: Text("Learning new Skills",
+                        activeColor: const Color.fromRGBO(250, 100, 7, 0.5),
+                        title: const Text("Learning new Skills",
                             style: TextStyle(
                                 color: Color.fromARGB(255, 35, 34, 34),
-                                fontSize: 15,
+                                fontSize: 17,
                                 fontWeight: FontWeight.w600)),
                       ),
                       CheckboxListTile(
@@ -101,20 +107,21 @@ class _MoreInfo2 extends State<info3> {
                             none = value;
                           });
                         },
-                        activeColor: Colors.blue,
-                        title: Text("None of the above",
+                        activeColor: const Color.fromRGBO(250, 100, 7, 0.5),
+                        title: const Text("None of the above",
                             style: TextStyle(
                                 color: Color.fromARGB(255, 35, 34, 34),
-                                fontSize: 15,
+                                fontSize: 17,
                                 fontWeight: FontWeight.w600)),
                       ),
                       Padding(
-                          padding: EdgeInsets.only(top: 20.0),
+                          padding: const EdgeInsets.only(top: 20.0),
                           child: Center(
                               child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                elevation: 0,
-                                primary: Color.fromRGBO(8, 143, 143, 1)),
+                              elevation: 10,
+                              primary: const Color.fromRGBO(250, 100, 7, 0.8),
+                            ),
                             onPressed: () {
                               Navigator.push(
                                   context,
@@ -123,12 +130,13 @@ class _MoreInfo2 extends State<info3> {
                             },
                             child: Container(
                               width: double.infinity,
-                              child: Center(
+                              height: 50,
+                              child: const Center(
                                   child: Text(
                                 'Next Step',
                                 style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               )),
                             ),

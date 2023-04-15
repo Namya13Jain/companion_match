@@ -34,7 +34,7 @@ class _ProvideInfo extends State<info1> {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => Start()));
               },
-              child: Icon(
+              child: const Icon(
                 Icons.arrow_back_ios_new_rounded,
                 color: Colors.white,
                 size: 20,
@@ -47,10 +47,10 @@ class _ProvideInfo extends State<info1> {
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("What's Your Gender",
+                      const Text("What's Your Gender",
                           style: TextStyle(
                               color: Color.fromARGB(255, 35, 34, 34),
-                              fontSize: 17,
+                              fontSize: 19,
                               fontWeight: FontWeight.w600)),
                       CheckboxListTile(
                         value: male,
@@ -59,11 +59,11 @@ class _ProvideInfo extends State<info1> {
                             male = value;
                           });
                         },
-                        activeColor: Colors.blue,
-                        title: Text("Male",
+                        activeColor: const Color.fromRGBO(250, 100, 7, 0.5),
+                        title: const Text("Male",
                             style: TextStyle(
                                 color: Color.fromARGB(255, 35, 34, 34),
-                                fontSize: 15,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600)),
                       ),
                       CheckboxListTile(
@@ -73,47 +73,47 @@ class _ProvideInfo extends State<info1> {
                             female = value;
                           });
                         },
-                        activeColor: Colors.blue,
-                        title: Text("Female",
+                        activeColor: const Color.fromRGBO(250, 100, 7, 0.5),
+                        title: const Text("Female",
                             style: TextStyle(
                                 color: Color.fromARGB(255, 35, 34, 34),
-                                fontSize: 15,
+                                fontSize: 16,
                                 fontWeight: FontWeight.w600)),
                       ),
-                      Text("What's Your Age",
+                      const Text("What's Your Age",
                           style: TextStyle(
                               color: Color.fromARGB(255, 35, 34, 34),
-                              fontSize: 17,
+                              fontSize: 19,
                               fontWeight: FontWeight.w600)),
-                      SizedBox(height: 10.0),
-                      TextField(
+                      const SizedBox(height: 10.0),
+                      const TextField(
                           textAlign: TextAlign.left,
                           decoration: InputDecoration(
                               filled: true,
                               fillColor: Colors.white,
                               labelText: "Enter Your Age",
                               contentPadding:
-                                  const EdgeInsets.only(bottom: 5.0, top: 12.5),
+                                  EdgeInsets.only(bottom: 5.0, top: 12.5),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(color: Colors.black),
                               ),
                               enabledBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(color: Colors.white),
                               ))),
-                      Text("Why do you want a Companion?",
+                      const Text("Why do you want a Companion?",
                           style: TextStyle(
                               color: Color.fromARGB(255, 35, 34, 34),
-                              fontSize: 17,
+                              fontSize: 19,
                               fontWeight: FontWeight.w600)),
-                      SizedBox(height: 10.0),
-                      TextField(
+                      const SizedBox(height: 10.0),
+                      const TextField(
                           textAlign: TextAlign.left,
                           decoration: InputDecoration(
                               filled: true,
                               fillColor: Colors.white,
                               labelText: "Enter the reason",
-                              contentPadding: const EdgeInsets.only(
-                                  bottom: 20.0, top: 80.0),
+                              contentPadding:
+                                  EdgeInsets.only(bottom: 20.0, top: 80.0),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(color: Colors.black),
                               ),
@@ -121,12 +121,13 @@ class _ProvideInfo extends State<info1> {
                                 borderSide: BorderSide(color: Colors.white),
                               ))),
                       Padding(
-                          padding: EdgeInsets.only(top: 20.0),
+                          padding: const EdgeInsets.only(top: 20.0),
                           child: Center(
                               child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                      elevation: 0,
-                                      primary: Color.fromRGBO(8, 143, 143, 1)),
+                                      elevation: 10,
+                                      primary: const Color.fromRGBO(
+                                          250, 100, 7, 0.8)),
                                   onPressed: () {
                                     Navigator.push(
                                         context,
@@ -134,13 +135,14 @@ class _ProvideInfo extends State<info1> {
                                             builder: (context) => info2()));
                                   },
                                   child: Container(
+                                      height: 50,
                                       width: double.infinity,
-                                      child: Center(
+                                      child: const Center(
                                           child: Text(
                                         'Next Step',
                                         style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.w600,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
                                         ),
                                       ))))))
                     ]))));

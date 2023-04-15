@@ -32,7 +32,7 @@ class _MoreInfo extends State<info2> {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => info1()));
               },
-              child: Icon(
+              child: const Icon(
                 Icons.arrow_back_ios_new_rounded,
                 color: Colors.white,
                 size: 20,
@@ -45,13 +45,13 @@ class _MoreInfo extends State<info2> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Tell Us About Yourself",
+                    const Text("Tell Us About Yourself",
                         style: TextStyle(
                             color: Color.fromARGB(255, 35, 34, 34),
-                            fontSize: 17,
+                            fontSize: 19,
                             fontWeight: FontWeight.w600)),
-                    SizedBox(height: 10.0),
-                    TextField(
+                    const SizedBox(height: 10.0),
+                    const TextField(
                         textAlign: TextAlign.left,
                         decoration: InputDecoration(
                             filled: true,
@@ -65,20 +65,20 @@ class _MoreInfo extends State<info2> {
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
                             ))),
-                    Text("Tell us about your Hobbies",
+                    const Text("Tell us about your Hobbies",
                         style: TextStyle(
                             color: Color.fromARGB(255, 35, 34, 34),
-                            fontSize: 17,
+                            fontSize: 19,
                             fontWeight: FontWeight.w600)),
-                    SizedBox(height: 10.0),
-                    TextField(
+                    const SizedBox(height: 10.0),
+                    const TextField(
                         textAlign: TextAlign.left,
                         decoration: InputDecoration(
                             filled: true,
                             fillColor: Colors.white,
                             labelText: "Write your hobbies",
                             contentPadding:
-                                const EdgeInsets.only(bottom: 20.0, top: 80.0),
+                                EdgeInsets.only(bottom: 20.0, top: 80.0),
                             focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(color: Colors.black),
                             ),
@@ -86,12 +86,13 @@ class _MoreInfo extends State<info2> {
                               borderSide: BorderSide(color: Colors.white),
                             ))),
                     Padding(
-                        padding: EdgeInsets.only(top: 20.0),
+                        padding: const EdgeInsets.only(top: 20.0),
                         child: Center(
                             child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              elevation: 0,
-                              primary: Color.fromRGBO(8, 143, 143, 1)),
+                            elevation: 10,
+                            primary: const Color.fromRGBO(250, 100, 7, 0.8),
+                          ),
                           onPressed: () {
                             Navigator.push(
                                 context,
@@ -100,12 +101,13 @@ class _MoreInfo extends State<info2> {
                           },
                           child: Container(
                             width: double.infinity,
-                            child: Center(
+                            height: 50,
+                            child: const Center(
                                 child: Text(
                               'Next Step',
                               style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w600,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
                               ),
                             )),
                           ),

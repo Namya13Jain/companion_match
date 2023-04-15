@@ -1,6 +1,5 @@
 import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:unicons/unicons.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -11,9 +10,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _page = 0;
-  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

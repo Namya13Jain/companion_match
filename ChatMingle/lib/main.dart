@@ -1,3 +1,4 @@
+import 'package:employfy/screens/explore_course.dart';
 import 'package:flutter/material.dart';
 import 'package:employfy/screens/companion/start.dart';
 import 'package:employfy/screens/home.dart';
@@ -42,6 +43,7 @@ class _MyAppState extends State<MyApp> {
         //'about_us':(context) =>  //about us
         //'feed_back':(context) => //feedback
         //'chat':(context) => //chat
+        'explore_course': (context) => const EnrolCourse(),
       },
     );
   }

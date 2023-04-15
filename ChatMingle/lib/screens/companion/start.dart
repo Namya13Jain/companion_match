@@ -137,42 +137,50 @@ class Start extends StatelessWidget {
           ),
         ),
         body: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 30.0),
+          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
           child: Column(
             children: [
               Container(
                   height: 200,
                   width: 200,
                   child: Image.asset('assets/images/age.jpg')),
-              SizedBox(height: 50),
-              Text("Feeling lonely, find companion",
+              const SizedBox(height: 20),
+              const Text(
+                "Feeling lonely? \nFind companion",
+                style: TextStyle(
+                    color: Color.fromARGB(255, 35, 34, 34),
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Text(
+                  "Chat Mingle is a platform which helps senior citizens to find friends with whom they can chat, meet and discuss whatever they want to. It will make them feel that someone is there to spend time with them.",
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Color.fromARGB(255, 35, 34, 34),
                       fontSize: 18,
                       fontWeight: FontWeight.w600)),
-              Text(
-                  "Chat Mingle is a platform which helps senior citizens to find friends with whom they can chat, meet and discuss whatever they want to. It will make them feel that someone is there who can spend time with them.",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 35, 34, 34),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600)),
               Padding(
-                  padding: EdgeInsets.only(top: 20.0),
+                  padding: const EdgeInsets.only(top: 40.0),
                   child: Center(
                       child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        elevation: 0, primary: Color.fromRGBO(8, 143, 143, 1)),
+                        elevation: 10,
+                        primary: const Color.fromRGBO(250, 100, 7, 0.8)),
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => info1()));
                     },
                     child: Container(
                       width: double.infinity,
-                      child: Center(
+                      height: 50,
+                      child: const Center(
                         child: Text(
                           'Start',
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
