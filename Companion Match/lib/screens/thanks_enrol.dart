@@ -1,23 +1,20 @@
+import 'package:employfy/screens/learn.dart';
 import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
 import 'package:unicons/unicons.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class Thanks extends StatelessWidget {
+  const Thanks({super.key});
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        elevation: 5,
         backgroundColor: const Color.fromRGBO(250, 100, 7, 0.8),
         title: const Text(
-          "Companion Match",
+          "Explore Course",
           style: appBarText,
         ),
         leading: Builder(
@@ -45,7 +42,6 @@ class _HomeScreenState extends State<HomeScreen> {
               image: AssetImage("assets/images/logo_bg.png"),
               height: 150,
             ),
-
             //home
             ListTile(
                 leading: const Icon(
@@ -121,27 +117,51 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      //body of the screen
-      body: Column(
-        children: const [
-          SizedBox(
-            height: 20,
-          ),
-          Text(
-            "Welcome to Companion Match",
-            style: headingText,
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Center(
-            child: Image(
-              image: AssetImage("assets/images/home.jpg"),
-              height: 200,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 30,
             ),
-          ),
-          Text("See what our Happy Users have to share", style: headingText),
-        ],
+            const Icon(
+              UniconsLine.check_circle,
+              color: Colors.black,
+              size: 100,
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              child: const Text(
+                "Thanks for enrolling in the course!\nWe'll contact you shortly for further details",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+              ),
+            ),
+            Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                child: Center(
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            elevation: 10,
+                            primary: const Color.fromRGBO(250, 100, 7, 0.8)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const LearnPage()));
+                        },
+                        child: Container(
+                            height: 50,
+                            width: double.infinity,
+                            child: const Center(
+                                child: Text(
+                              'Continue',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )))))),
+          ],
+        ),
       ),
     );
   }

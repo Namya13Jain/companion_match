@@ -141,7 +141,7 @@ class LearnPage extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.all(10.0),
                         child: Text(
-                          'SEWING \n Duration: 2 months \n Coach: Shivani Das',
+                          'Sewing \n Duration: 2 months \n Coach: Shivani Das',
                           style: TextStyle(fontSize: 18.0),
                         ),
                       ),
@@ -165,7 +165,7 @@ class LearnPage extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.all(10.0),
                         child: Text(
-                          'COOKING \n Duration: 1 month \n Coach: Amrita Oberoi',
+                          'Cooking \n Duration: 1 month \n Coach: Amrita Oberoi',
                           style: TextStyle(fontSize: 18.0),
                         ),
                       ),
@@ -176,8 +176,8 @@ class LearnPage extends StatelessWidget {
               Card(
                 child: Column(
                   children: <Widget>[
-                    Image.network(
-                      'https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/05/05011631/How-to-Learn-Spoken-English_.png',
+                    Image.asset(
+                      "assets/images/english.png",
                       height: 150.0,
                       width: 150.0,
                       fit: BoxFit.cover,
@@ -195,8 +195,8 @@ class LearnPage extends StatelessWidget {
               Card(
                 child: Column(
                   children: <Widget>[
-                    Image.network(
-                      'https://naadacademy.in/wp-content/uploads/2020/12/Harmonium-online-750x500-1.jpg',
+                    Image.asset(
+                      "assets/images/harmonium.jpg",
                       height: 150.0,
                       width: 150.0,
                       fit: BoxFit.cover,
@@ -214,12 +214,18 @@ class LearnPage extends StatelessWidget {
               Card(
                 child: Column(
                   children: <Widget>[
-                    Image.network(
-                      'https://arjundixitphotography.files.wordpress.com/2021/10/adp_1011-1.jpg?w=1568',
+                    Image.asset(
+                      "assets/images/sitar.png",
                       height: 150.0,
                       width: 150.0,
                       fit: BoxFit.cover,
                     ),
+                    /* Image.network(
+                      'https://arjundixitphotography.files.wordpress.com/2021/10/adp_1011-1.jpg?w=1568',
+                      height: 150.0,
+                      width: 150.0,
+                      fit: BoxFit.cover,
+                    ), */
                     const Padding(
                       padding: EdgeInsets.all(10.0),
                       child: Text(
@@ -229,6 +235,9 @@ class LearnPage extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              const SizedBox(
+                height: 40,
               ),
             ],
           ),

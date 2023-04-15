@@ -1,3 +1,5 @@
+import 'package:employfy/screens/learn.dart';
+import 'package:employfy/screens/thanks_enrol.dart';
 import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
 import 'package:unicons/unicons.dart';
@@ -118,7 +120,71 @@ class EnrolCourse extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [],
+          children: [
+            const SizedBox(
+              height: 30,
+            ),
+            Center(
+              child: Image.network(
+                'https://media.istockphoto.com/id/1301201223/photo/a-woman-tailor-works-at-sewing-machine-sews-reuses-fabric-from-old-denim-clothes.jpg?b=1&s=170667a&w=0&k=20&c=twwfci3IXTt3zhKn5MaIP6kmEn7rQWAHzt3OU-8_UD0=',
+                height: 200.0,
+                width: 200.0,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Text(
+              "SEWING",
+              style: headingText,
+            ),
+            const Text(
+              "Coach: Shivani Das",
+              style: bodyText,
+            ),
+            const Text(
+              "Duration: 2 Months",
+              style: bodyText,
+            ),
+            const Text(
+              "Mode: Online on Google Meet",
+              style: bodyText,
+            ),
+            const Text(
+              "Pre-requisites: None",
+              style: bodyText,
+            ),
+            const Text(
+              "Batch Timings: 4pm-6pm on Weekends",
+              style: bodyText,
+            ),
+            Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                child: Center(
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            elevation: 10,
+                            primary: const Color.fromRGBO(250, 100, 7, 0.8)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Thanks()));
+                        },
+                        child: Container(
+                            height: 50,
+                            width: double.infinity,
+                            child: const Center(
+                                child: Text(
+                              'Enrol Now',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )))))),
+          ],
         ),
       ),
     );
