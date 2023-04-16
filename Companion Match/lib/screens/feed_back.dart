@@ -1,3 +1,4 @@
+import 'package:employfy/screens/thanks_feedback.dart';
 import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
 import 'package:unicons/unicons.dart';
@@ -141,6 +142,32 @@ class FeedBack extends StatelessWidget {
                       enabledBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.white),
                       ))),
+              Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  child: Center(
+                      child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              elevation: 10,
+                              primary: const Color.fromRGBO(250, 100, 7, 0.8)),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const ThanksFeedback()));
+                          },
+                          child: Container(
+                              height: 50,
+                              width: double.infinity,
+                              child: const Center(
+                                  child: Text(
+                                'Submit',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )))))),
             ],
           ),
         ),

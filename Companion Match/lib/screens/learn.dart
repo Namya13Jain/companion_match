@@ -132,8 +132,8 @@ class LearnPage extends StatelessWidget {
                 child: Card(
                   child: Column(
                     children: <Widget>[
-                      Image.network(
-                        'https://media.istockphoto.com/id/1301201223/photo/a-woman-tailor-works-at-sewing-machine-sews-reuses-fabric-from-old-denim-clothes.jpg?b=1&s=170667a&w=0&k=20&c=twwfci3IXTt3zhKn5MaIP6kmEn7rQWAHzt3OU-8_UD0=',
+                      Image.asset(
+                        "assets/images/sewing.jpg",
                         height: 150.0,
                         width: 150.0,
                         fit: BoxFit.cover,

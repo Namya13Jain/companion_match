@@ -143,7 +143,7 @@ class Start extends StatelessWidget {
                 height: 20,
               ),
               const Text(
-                  "Chat Mingle is a platform which helps senior citizens to find friends with whom they can chat, meet and discuss whatever they want to. It will make them feel that someone is there to spend time with them.",
+                  "Companion Match is a platform which helps senior citizens to find friends with whom they can chat, meet and discuss whatever they want to. It will make them feel that someone is there to spend time with them.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Color.fromARGB(255, 35, 34, 34),

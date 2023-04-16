@@ -1,11 +1,12 @@
+import 'package:employfy/screens/feed_back.dart';
+import 'package:employfy/screens/home.dart';
 import 'package:employfy/screens/learn.dart';
-import 'package:employfy/screens/thanks_enrol.dart';
 import 'package:employfy/utils/commons.dart';
 import 'package:flutter/material.dart';
 import 'package:unicons/unicons.dart';
 
-class EnrolCourse extends StatelessWidget {
-  const EnrolCourse({super.key});
+class ThanksFeedback extends StatelessWidget {
+  const ThanksFeedback({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -124,40 +125,17 @@ class EnrolCourse extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            Center(
-              child: Image.asset(
-                "assets/images/sewing.jpg",
-                height: 200.0,
-                width: 200.0,
-                fit: BoxFit.cover,
+            const Icon(
+              UniconsLine.check_circle,
+              color: Colors.black,
+              size: 100,
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+              child: const Text(
+                "Thanks for your valuable feedback!",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
               ),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            const Text(
-              "SEWING",
-              style: headingText,
-            ),
-            const Text(
-              "Coach: Shivani Das",
-              style: bodyText,
-            ),
-            const Text(
-              "Duration: 2 Months",
-              style: bodyText,
-            ),
-            const Text(
-              "Mode: Online on Google Meet",
-              style: bodyText,
-            ),
-            const Text(
-              "Pre-requisites: None",
-              style: bodyText,
-            ),
-            const Text(
-              "Batch Timings: 4pm-6pm on Weekends",
-              style: bodyText,
             ),
             Padding(
                 padding:
@@ -171,14 +149,14 @@ class EnrolCourse extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Thanks()));
+                                  builder: (context) => const HomeScreen()));
                         },
                         child: Container(
                             height: 50,
                             width: double.infinity,
                             child: const Center(
                                 child: Text(
-                              'Enrol Now',
+                              'Continue',
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
