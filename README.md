@@ -12,7 +12,7 @@ Companion Match is an all-in-one solution for seniors looking for companionship,
 2. Companion Match also offers a unique mentorship program, connecting seniors with college students who can provide guidance and support as they learn new skills. College students can earn certificates of social internships, which will help them stand out when applying for jobs.
 
 # Glimpses of Companion Match
-<img src =  "https://user-images.githubusercontent.com/100767035/232273799-641acebd-747b-4a32-b056-6d0cf59edda0.png" width = "200" height = "400" ><img src =  "https://user-images.githubusercontent.com/100767035/232266885-f9d62f22-e372-471f-bbed-b3f01a18ee92.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232273799-641acebd-747b-4a32-b056-6d0cf59edda0.png" width = "200" height = "400" > <img src =  "https://user-images.githubusercontent.com/100767035/232266885-f9d62f22-e372-471f-bbed-b3f01a18ee92.png" width = "200" height = "400" >
 <img src =  "https://user-images.githubusercontent.com/100767035/232273837-46def85e-76fb-4fd2-bfac-27e9705f43ee.png" width = "200" height = "400" >
 <img src =  "https://user-images.githubusercontent.com/100767035/232273842-19b91f72-5187-4c6c-9833-3d32c48687b9.png" width = "200" height = "400" >
 <img src =  "https://user-images.githubusercontent.com/100767035/232274360-e67935ca-087c-4fb1-86c6-393e0573351d.png" width = "200" height = "400" >
