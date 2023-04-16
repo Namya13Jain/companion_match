@@ -16,11 +16,11 @@ Companion Match is an all-in-one solution for seniors looking for companionship,
 
 2. Partnerships with senior living communities: Partner with senior living communities and assisted living facilities to offer the app as a value-added service for their residents. This can help promote the app to a captive audience who are already interested in services that support senior care and wellbeing.
 
-3.Local outreach: Conduct outreach programs in local communities and senior centers to promote the app and its features. This can include informational sessions, workshops, and social events that highlight the app's features and benefits.
+3. Local outreach: Conduct outreach programs in local communities and senior centers to promote the app and its features. This can include informational sessions, workshops, and social events that highlight the app's features and benefits.
 
-4.Referral programs: Implement a referral program that incentivizes users to invite their friends and family members to join the app. This can be done through rewards such as discounts on service fees, free service hours, or other perks.
+4. Referral programs: Implement a referral program that incentivizes users to invite their friends and family members to join the app. This can be done through rewards such as discounts on service fees, free service hours, or other perks.
 
-5.Influencer marketing: Partner with senior influencers and bloggers to promote the app on social media and other online platforms. This can help raise awareness of the app among senior audiences who are already engaged with content related to aging and senior care.
+5. Influencer marketing: Partner with senior influencers and bloggers to promote the app on social media and other online platforms. This can help raise awareness of the app among senior audiences who are already engaged with content related to aging and senior care.
 
 Overall, these strategies can help promote Aging Together to the target audience and raise awareness of the app's unique features and benefits. By leveraging a combination of targeted advertising, local outreach, referral programs, and influencer marketing, the app can reach a wide audience and establish itself as a leading provider of senior care services.
 # Future Scope
