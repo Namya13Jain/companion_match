@@ -12,7 +12,7 @@ Companion Match is an all-in-one solution for seniors looking for companionship,
 2. Companion Match also offers a unique mentorship program, connecting seniors with college students who can provide guidance and support as they learn new skills. College students can earn certificates of social internships, which will help them stand out when applying for jobs.
 
 # Tech Stacks Used
-Flutter SDK is used using Dart Language to develop the front end of the application. 
+Flutter SDK using Dart Language  is used to develop the front end of the application. 
 # Marketing Strategy
 1. Targeted advertising: Advertise the app on social media platforms such as Facebook, Twitter, and Instagram, targeting users aged 60 and above, as well as their adult children who may be looking for support services for their parents. This can be done through targeted advertising campaigns that focus on the app's key features and benefits.
 
