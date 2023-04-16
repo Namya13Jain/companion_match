@@ -1,5 +1,7 @@
 //import 'package:employfy/screens/chat.dart';
+import 'package:employfy/screens/about_us.dart';
 import 'package:employfy/screens/explore_course.dart';
+import 'package:employfy/screens/feed_back.dart';
 import 'package:flutter/material.dart';
 import 'package:employfy/screens/companion/start.dart';
 import 'package:employfy/screens/home.dart';
@@ -46,8 +48,8 @@ class _MyAppState extends State<MyApp> {
         'start': (context) => Start(), //companion
         'home_screen': (context) => const HomeScreen(), //home screen
         'learn': (context) => const LearnPage(), //learning page
-        //'about_us':(context) =>  //about us
-        //'feed_back':(context) => //feedback
+        'about_us': (context) => const AboutUs(), //about us
+        'feed_back': (context) => const FeedBack(), //feedback
         'explore_course': (context) => const EnrolCourse(),
       },
     );
