@@ -12,18 +12,17 @@ Companion Match is an all-in-one solution for seniors looking for companionship,
 2. Companion Match also offers a unique mentorship program, connecting seniors with college students who can provide guidance and support as they learn new skills. College students can earn certificates of social internships, which will help them stand out when applying for jobs.
 
 # Glimpses of Companion Match
-<img src =  "" width = "200" height = "400" >
-<img src =  "https://user-images.githubusercontent.com/100767035/232266885-f9d62f22-e372-471f-bbed-b3f01a18ee92.png" width = "200" height = "400" >
-<img src =  "" width = "200" height = "400" >
-<img src =  "" width = "200" height = "400" >
-<img src =  "" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232273799-641acebd-747b-4a32-b056-6d0cf59edda0.png" width = "200" height = "400" ><img src =  "https://user-images.githubusercontent.com/100767035/232266885-f9d62f22-e372-471f-bbed-b3f01a18ee92.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232273837-46def85e-76fb-4fd2-bfac-27e9705f43ee.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232273842-19b91f72-5187-4c6c-9833-3d32c48687b9.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232274360-e67935ca-087c-4fb1-86c6-393e0573351d.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232274362-62835329-490a-400c-af26-8211b37f8117.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232273857-1ba9835b-0f44-4daa-a84a-579eac7b676c.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232273903-1a2910c5-fb7b-40f4-a773-7ca9fd724494.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232273928-df08811a-eaf4-4723-b697-3be515332f5f.png" width = "200" height = "400" >
+<img src =  "https://user-images.githubusercontent.com/100767035/232273983-922e596d-ba76-40d1-9e25-b4f926572577.png" width = "200" height = "400" >
 <img src =  "https://user-images.githubusercontent.com/100767035/232266891-3b42d98a-cbc3-4d9e-b74c-b1ed88d22109.png" width = "200" height = "400" >
-<img src =  "" width = "200" height = "400" >
-
-![home]()
-![about us]()
-
-
+<img src =  "https://user-images.githubusercontent.com/100767035/232273804-a504e3d4-554a-4b37-87dd-930a8a0efa48.png" width = "200" height = "400" >
 
 # Tech Stacks Used
 Flutter SDK using Dart Language  is used to develop the front end of the application. 
