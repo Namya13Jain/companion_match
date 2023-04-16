@@ -14,3 +14,4 @@ Companion Match is an all-in-one solution for seniors looking for companionship,
 # Future Scope
 1. We will be adding medication reminders that allows immediate family members to record and schedule personalized voice messages so that they do not miss out any medicines.
 2. We will also offer the option for the immediate family members to track the location of their loved ones suffering from Alzeimers disease and dementia, through just their phones. 
+3. Multi-language support Some of our old buddies may not be as comfortable communicating in the English language. So to ease out the navigation through our app, we will be providing multi-language support in various languages such as Hindi, Bengali and Marathi.
